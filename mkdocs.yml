@@ -1,0 +1,10 @@
+site_name: Adm Ti - Docs
+nav:
+  - Home: index.md
+  - Sobre: about.md
+  - Introdução: introduction.md
+  - GLPI: glpi.md
+  - MkDocs: mkdocs.md
+  - Conclusão: conclusion.md
+theme:
+    name: simple-blog
