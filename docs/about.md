@@ -1,4 +1,4 @@
-# *Guia de Instalação do GLPI*
+# *Introdução das ferramentas documentadas*
 
 Escrito por: **Edigar de Almeida Carvalho**
 
@@ -8,3 +8,6 @@ O GLPI é uma ferramenta de código aberto essencial para o gerenciamento de ati
 
 ![Image title](https://upload.wikimedia.org/wikipedia/commons/9/93/Glpi_screenshot_en.png)
 
+## Introdução ao MkDocs 🌐
+
+O MkDocs é um gerador de sites estáticos rápido e simples, ideal para criar documentação de projetos. Este guia irá orientá-lo no processo de instalação do MkDocs no Ubuntu, criação de um projeto de documentação e configuração básica usando um arquivo YAML.

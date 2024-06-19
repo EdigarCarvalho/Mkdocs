@@ -1,4 +1,4 @@
-site_name: Adm Ti - Docs
+site_name: Administração de TI - Documentação
 nav:
   - Home: index.md
   - Sobre: about.md
@@ -8,3 +8,7 @@ nav:
   - Conclusão: conclusion.md
 theme:
     name: simple-blog
+plugins:
+  - search
+  - mkdocstrings
+  
