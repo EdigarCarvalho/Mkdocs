@@ -40,7 +40,7 @@ cd ~/Desktop
 mkdocs new nome_do_projeto
 ```
 
-Substitua "nome_do_projeto" pelo nome desejado para seu projeto. 
+Substitua "nome_do_projeto" pelo nome desejado para seu projeto.
 
 Agora, abra a nova pasta criada e liste todos os arquivos do MkDocs:
 
@@ -88,7 +88,7 @@ Após instalar o tema, edite o arquivo `mkdocs.yml` e defina o nome do tema para
 
 ```yaml
 theme:
-    name: simple-blog
+  name: simple-blog
 ```
 
 ## 5 - Servindo a Documentação Localmente 🌍
@@ -99,7 +99,9 @@ Para iniciar o servidor de desenvolvimento do MkDocs e visualizar sua documenta�
 mkdocs serve
 ```
 
-O terminal exibirá um link localhost. Copie e cole esse link em qualquer navegador web para visualizar a documentação.
+O terminal exibirá um link localhost. Copie e cole esse link em qualquer navegador web para visualizar a documentação. Você deverá ver algo parecido com a imagem:
+
+![Image title](https://www.mkdocs.org/img/screenshot.png)
 
 ## 6 - Construindo a Documentação 🏗️
 
@@ -116,17 +118,17 @@ Este comando gerará uma versão estática da sua documentação, pronta para se
 O MkDocs possui um mecanismo para publicar diretamente a documentação no GitHub Pages. Para isso, seu projeto precisa estar vinculado a um repositório no GitHub:
 
 1. Inicie um repositório Git no diretório do seu projeto, se ainda não estiver versionado:
-    ```sh
-    git init
-    ```
+   ```sh
+   git init
+   ```
 2. Adicione seu repositório remoto:
-    ```sh
-    git remote add origin <URL_DO_SEU_REPOSITORIO>
-    ```
+   ```sh
+   git remote add origin <URL_DO_SEU_REPOSITORIO>
+   ```
 3. Faça o deploy da sua documentação para o GitHub Pages:
-    ```sh
-    mkdocs gh-deploy
-    ```
+   ```sh
+   mkdocs gh-deploy
+   ```
 
 Para mais informações sobre o tema, consulte a [documentação do tema](https://fernandocelmer.github.io/mkdocs-simple-blog/).
 

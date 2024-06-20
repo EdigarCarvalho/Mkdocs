@@ -222,7 +222,6 @@ Consulte a [lista oficial de fusos horários suportados pelo PHP](https://www.ph
 
 ## 6 - Instalação Web
 
-
 Uma vez que a instalação e configuração das dependências estiverem concluídas, continue o processo de instalação em um navegador web com acesso a este mesmo servidor. Abra um navegador web e digite o registro DNS que você criou para este servidor. 🌐
 
 Você deverá ver uma tela para selecionar uma linguagem :
@@ -259,5 +258,30 @@ Você deverá ver uma tela para selecionar uma linguagem :
 
 ![Image title](https://hedgedoc.teclib.com/uploads/upload_0e2f7386041260c85df9c4111e4ab347.png)
 
+## 6 - Tour pela Ferramenta ✈️
 
+Agora vamos explorar um pouco mais sobre o uso do GLPI, uma ferramenta extremamente completa. Em minha experiência inicial, comecei cadastrando dispositivos de minha casa, trabalho e faculdade. Para isso, utilizei a seção de Assets no menu lateral esquerdo. Ao acessar essa seção, é possível categorizar os dispositivos, como "Computadores", "Monitores", "Dispositivos de Rede", "Impressoras" e "Telefones". Para adicionar um novo item, basta clicar em **+ Add**; para editar um item existente, clique sobre ele.
 
+### Assets 🖥️
+#### Visão Geral dos Assets
+![Visão Geral dos Assets](https://i.postimg.cc/k5RBynPn/Screenshot-from-2024-06-17-20-48-21.png)
+
+#### Computers - Seção de Computadores/Notebooks
+![Computers - Seção de Computadores/Notebooks](https://i.postimg.cc/c41Cb7Gk/Screenshot-from-2024-06-17-20-49-04.png)
+
+#### Phones - Seção de Celulares/Telefones
+![Phones - Seção de Celulares/Telefones](https://i.postimg.cc/7ZdLhpGj/Screenshot-from-2024-06-17-20-50-31.png)
+
+### Dashboard dos Assets 📊
+Após cadastrar os itens, você pode acessar o Dashboard para ter uma visão panorâmica dos Assets:
+![Dashboard dos Assets](https://i.postimg.cc/9fsq3DYR/Screenshot-from-2024-06-17-20-46-20.png)
+
+## Assistance - Assistência 🛠️
+
+Na seção "Assistance", utilizei o GLPI para cadastrar chamados/incidentes (Tickets), em meu uso foram tarefas relacionadas principalmente ao meio acadêmico, como projetos e trabalhos específicos. No contexto empresarial, esses tickets comumente seriam incidentes ou solicitações de suporte técnico.
+
+### Dashboard da seção de Assistência
+![Dashboard da seção de Assistência](https://i.postimg.cc/2ykkgYML/Screenshot-from-2024-06-17-20-53-59.png)
+
+### Visão Geral dos Tickets
+![Visão Geral dos Tickets](https://i.postimg.cc/9QRW6J8b/Screenshot-from-2024-06-17-20-55-28.png)
