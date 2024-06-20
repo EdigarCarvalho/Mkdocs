@@ -8,6 +8,8 @@ nav:
   - Conclusão: conclusion.md
 theme:
     name: simple-blog
+    # logo: assets/logo.ico
+    # favicon: assets/logo.ico
 plugins:
   - search
   - mkdocstrings

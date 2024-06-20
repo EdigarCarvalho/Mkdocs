@@ -90,6 +90,8 @@ Após instalar o tema, edite o arquivo `mkdocs.yml` e defina o nome do tema para
 theme:
   name: simple-blog
 ```
+Para mais informações sobre o tema, consulte a [documentação do tema](https://fernandocelmer.github.io/mkdocs-simple-blog/).
+
 
 ## 5 - Servindo a Documentação Localmente 🌍
 
@@ -129,7 +131,5 @@ O MkDocs possui um mecanismo para publicar diretamente a documentação no GitHu
    ```sh
    mkdocs gh-deploy
    ```
-
-Para mais informações sobre o tema, consulte a [documentação do tema](https://fernandocelmer.github.io/mkdocs-simple-blog/).
 
 Espero que este guia seja útil! Se precisar de mais alguma coisa, estou à disposição.
