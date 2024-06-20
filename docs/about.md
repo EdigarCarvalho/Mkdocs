@@ -1,13 +1,17 @@
-# *Introdução das ferramentas documentadas*
+# *Sobre 📙*
 
 Escrito por: **Edigar de Almeida Carvalho**
 
-## Introdução ao GLPI
+## Objetivos da Documentação e do Projeto 📄
 
-O GLPI é uma ferramenta de código aberto essencial para o gerenciamento de ativos de TI e suporte técnico. Antes de iniciar a instalação, é crucial garantir que todos os requisitos estejam atendidos. Recomenda-se utilizar um servidor Linux, preferencialmente o Ubuntu 22.04 LTS, juntamente com um servidor web como o Apache, PHP e um sistema de gerenciamento de banco de dados como o MariaDB. Embora este guia se concentre no Ubuntu, as instruções podem ser adaptadas para outras distribuições Linux. Abaixo uma imagem de um dashboard na ferramenta :
+A documentação tem como objetivo principal fornecer informações claras sobre o uso, configuração e instalação das ferramentas, servindo para:
 
-![Image title](https://upload.wikimedia.org/wikipedia/commons/9/93/Glpi_screenshot_en.png)
+- **Facilitar a Instalação e Uso**: Ajudar na instalação e uso das ferramentas.
+- **Incentivar a Prática de Documentar**: Através do projeto, influenciar a produção de mais documentações e promover o hábito de documentar.
+- **Propagar o Uso de Ferramentas Gratuitas e Poderosas**: Ajudar novos usuários a se familiarizarem rapidamente com as ferramentas ou sistemas.
+- **Facilitar o Suporte**: Fornecer um recurso para resolver problemas e responder a perguntas frequentes.
 
-## Introdução ao MkDocs 🌐
+## Autor ✍️
 
-O MkDocs é um gerador de sites estáticos rápido e simples, ideal para criar documentação de projetos. Este guia irá orientá-lo no processo de instalação do MkDocs no Ubuntu, criação de um projeto de documentação e configuração básica usando um arquivo YAML.
+O presente projeto foi escrito por **Edigar de Almeida Carvalho**, aluno do curso de Ciência da Computação do IFMA, para disciplina de Administração de TI. : )
+

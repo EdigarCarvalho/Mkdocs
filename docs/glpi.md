@@ -1,4 +1,4 @@
-# *Guia de Instalação do GLPI*
+# GUIA DE INSTALAÇÃO E USO DO GLPI 📚
 
 Escrito por: **Edigar de Almeida Carvalho**
 
