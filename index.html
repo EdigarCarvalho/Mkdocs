@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>Adm Ti - Docs</title>
+                <title>Administração de TI - Documentação</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/main.min.css">
+                <link href="assets/_mkdocstrings.css" rel="stylesheet">
                 <script src="search/main.js"></script>
 
             
@@ -36,7 +37,7 @@
         
 
         
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Adm Ti - Docs</span>
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Administração de TI - Documentação</span>
         
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
@@ -123,11 +124,79 @@
                 <h1 class=" title" id="component-title">Home</h1>
             
         </header>
-        <p><h1 id="guia-de-instalacao-do-glpi"><em>Guia de Instalação do GLPI</em></h1>
+        <p><h1 id="o-que-e"><em>O que é? 🤔</em></h1>
 <p>Escrito por: <strong>Edigar de Almeida Carvalho</strong></p>
-<h2 id="introducao-ao-glpi">Introdução ao GLPI</h2>
-<p>O GLPI é uma ferramenta de código aberto essencial para o gerenciamento de ativos de TI e suporte técnico. Antes de iniciar a instalação, é crucial garantir que todos os requisitos estejam atendidos. Recomenda-se utilizar um servidor Linux, preferencialmente o Ubuntu 22.04 LTS, juntamente com um servidor web como o Apache, PHP e um sistema de gerenciamento de banco de dados como o MariaDB. Embora este guia se concentre no Ubuntu, as instruções podem ser adaptadas para outras distribuições Linux. Abaixo uma imagem de um dashboard na ferramenta :</p>
-<p><img alt="Image title" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Glpi_screenshot_en.png" /></p></p>
+<h1 id="glpi">GLPI</h1>
+<p>O GLPI (Gestionnaire Libre de Parc Informatique) é uma poderosa ferramenta open-source para gerenciamento de ativos de TI e helpdesk 📊. Serve para catalogar e monitorar todos os equipamentos de TI, gerenciar tickets de suporte, controlar licenças de software, planejar tarefas e monitorar projetos, além de gerenciar orçamentos, contratos e usuários de forma eficiente 🖥️🛠️. Com o GLPI, você tem uma visão completa e organizada da infraestrutura de TI da sua organização, facilitando a administração e otimização dos recursos disponíveis 📈📅.</p>
+<h2 id="caracteristicas-e-possibilidades">Características e possibilidades</h2>
+<h3 id="cmdb-gerenciamento-de-configuracao-de-banco-de-dados">CMDB (Gerenciamento de Configuração de Banco de Dados)</h3>
+<ul>
+<li><strong>Hardware:</strong> Gerenciamento e inventário de computadores, monitores, dispositivos de rede, dispositivos passivos, etc.</li>
+<li><strong>Data Centers:</strong> Integração e gerenciamento de data centers e elementos contidos nas salas de servidores.</li>
+<li><strong>Software:</strong> Gerenciamento de software, versões e licenças.</li>
+<li><strong>Dispositivos:</strong> Inventário de impressoras, cartuchos, consumíveis, telefones, PDUs, etc.</li>
+</ul>
+<h3 id="helpdesk">Helpdesk</h3>
+<ul>
+<li><strong>Chamados:</strong> Criação de tickets para incidentes ou solicitações, com atribuição a grupos ou responsáveis específicos.</li>
+<li><strong>Problemas:</strong> Gestão de problemas com conceitos como requerentes, observadores, atribuição, status, urgência, impacto, prioridade e categoria.</li>
+<li><strong>Mudanças:</strong> Gestão de mudanças com planejamento, atribuição e orçamento.</li>
+<li><strong>Planejamento:</strong> Acompanhamento das tarefas dos agentes de TI e status dos projetos.</li>
+<li><strong>Estatísticas:</strong> Exibição de estatísticas sobre tickets, satisfação, tempo médio, etc.</li>
+<li><strong>Chamados Recorrentes:</strong> Programação de abertura de chamados de forma recorrente.</li>
+<li><strong>Formulários:</strong> Criação de formulários personalizados para a abertura de chamados ou mudanças.</li>
+</ul>
+<h3 id="gestao-financeira">Gestão Financeira</h3>
+<ul>
+<li><strong>Licenças:</strong> Gerenciamento de licenças de software.</li>
+<li><strong>Orçamentos:</strong> Implementação e gerenciamento de orçamentos.</li>
+<li><strong>Fornecedores:</strong> Integração e vinculação de fornecedores a diferentes objetos do GLPI.</li>
+<li><strong>Contratos:</strong> Gestão de contratos relacionados a ativos e assistência.</li>
+<li><strong>Contatos:</strong> Administração de contatos dentro do sistema.</li>
+<li><strong>Documentos:</strong> Gestão de documentos, com possibilidade de anexá-los a diferentes elementos do GLPI.</li>
+<li><strong>Linhas e Certificados:</strong> Gerenciamento de linhas telefônicas e integração de certificados.</li>
+</ul>
+<h3 id="gerenciamento-de-projetos">Gerenciamento de Projetos</h3>
+<ul>
+<li><strong>Projetos:</strong> Atribuição de tarefas, adição de colaboradores, definição de prazos e uso de quadros Kanban e GANTT.</li>
+<li><strong>Relatórios e Dashboards:</strong> Geração de relatórios e exibição de dados financeiros e equipamentos.</li>
+</ul>
+<h3 id="administracao">Administração</h3>
+<ul>
+<li><strong>Usuários e Grupos:</strong> Controle de usuários, definição de entidades e perfis, e restrição de acesso às informações.</li>
+<li><strong>Regras e Dicionários:</strong> Automação de ações e associações, modificação de dados inseridos ou existentes.</li>
+<li><strong>Notificações e Logs:</strong> Monitoramento de notificações e eventos do sistema.</li>
+<li><strong>Configuração:</strong> Personalização do GLPI, gerenciamento de SLAs, autenticação, e listas suspensas.</li>
+</ul>
+<h3 id="extras">Extras</h3>
+<ul>
+<li><strong>Ações Automáticas:</strong> Configuração de ações automáticas.</li>
+<li><strong>Autenticação:</strong> Suporte para várias fontes de autenticação externa.</li>
+<li><strong>Links Externos:</strong> Associação de elementos do GLPI a links para aplicativos externos.</li>
+</ul>
+<h1 id="mkdocs">MKDocs</h1>
+<p>O MKDocs é uma ferramenta simples e poderosa para criar documentação para seus projetos de código aberto 📚. Ele se destaca pela simplicidade de uso e pela geração de sites de documentação elegantes e fáceis de navegar. Em vez de se preocupar com HTML, CSS e JavaScript, você pode se concentrar no conteúdo da documentação em formato Markdown ✍️.</p>
+<h2 id="caracteristicas-e-possibilidades_1">Características e possibilidades</h2>
+<h3 id="sintaxe-markdown">Sintaxe Markdown</h3>
+<ul>
+<li><strong>Markdown:</strong> Escreva sua documentação utilizando a sintaxe simples do Markdown, facilitando a escrita e tornando-a acessível para todos.</li>
+</ul>
+<h3 id="tema-personalizavel">Tema Personalizável</h3>
+<ul>
+<li><strong>Temas:</strong> Escolha entre uma variedade de temas para personalizar a aparência do seu site de documentação, garantindo um visual profissional e atraente.</li>
+</ul>
+<h3 id="facilidade-de-uso">Facilidade de Uso</h3>
+<ul>
+<li><strong>Simplicidade:</strong> Não é necessário ser um expert em web design para criar documentação bonita. O MKDocs simplifica o processo, permitindo que você se concentre no conteúdo.</li>
+</ul>
+<h3 id="integracao-com-git">Integração com Git</h3>
+<ul>
+<li><strong>Git:</strong> Mantenha sua documentação em sincronia com seu repositório Git, facilitando a atualização e o controle de versão da documentação.</li>
+</ul>
+<h3 id="suporte-para-plugins">Suporte para Plugins</h3>
+<ul>
+<li><strong>Plugins:</strong> Amplie a funcionalidade do MKDocs com plugins que permitem a integração de gráficos, diagramas e muito mais, aumentando a riqueza do conteúdo da sua documentação.</li>
+</ul></p>
     </article>
 </section>
 <!-- endblock -->

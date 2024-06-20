@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>MkDocs - Adm Ti - Docs</title>
+                <title>MkDocs - Administração de TI - Documentação</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="../assets/css/main.min.css">
+                <link href="../assets/_mkdocstrings.css" rel="stylesheet">
                 <script src="../search/main.js"></script>
 
             
@@ -36,7 +37,7 @@
         
 
         
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Adm Ti - Docs</span>
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Administração de TI - Documentação</span>
         
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
@@ -123,15 +124,16 @@
                 <h1 class=" title" id="component-title">MkDocs</h1>
             
         </header>
-        <p><h1 id="guia-de-instalacao-do-mkdocs">Guia de Instalação do MkDocs</h1>
+        <p><h1 id="guia-de-instalacao-e-uso-do-mkdocs">Guia de Instalação e Uso do MkDocs 📚</h1>
 <p>Escrito por: <strong>Edigar de Almeida Carvalho</strong></p>
-<h2 id="introducao-ao-mkdocs">Introdução ao MkDocs</h2>
-<p>O MkDocs é um gerador de sites estáticos rápido e simples, ideal para criar documentação de projetos. Este guia irá orientá-lo no processo de instalação do MkDocs no Ubuntu. Vamos começar!</p>
-<p>Antes de iniciar a instalação, certifique-se de que você tem o Python instalado. Verifique a versão do Python e do pip digitando os seguintes comandos no terminal:</p>
+<h2 id="relembrando">Relembrando</h2>
+<p>O MkDocs é um gerador de sites estáticos rápido e simples, ideal para criar documentação de projetos. Este guia irá orientá-lo no processo de instalação do MkDocs no Ubuntu, criação de um projeto de documentação e configuração básica usando um arquivo YAML.</p>
+<h2 id="1-verificando-requisitos">1 - Verificando Requisitos ✅</h2>
+<p>Antes de iniciar a instalação, certifique-se de que você tem o Python e o pip instalados. Verifique a versão do Python e do pip digitando os seguintes comandos no terminal:</p>
 <pre><code class="language-sh">python --version
 pip --version
 </code></pre>
-<h2 id="1-instalacao-do-mkdocs">1 - Instalação do MkDocs</h2>
+<h2 id="2-instalando-o-mkdocs">2 - Instalando o MkDocs 🛠️</h2>
 <p>Para instalar o MkDocs, utilize o pip, o instalador de pacotes do Python. Execute o comando abaixo no terminal:</p>
 <pre><code class="language-sh">pip install mkdocs
 </code></pre>
@@ -139,30 +141,70 @@ pip --version
 <p>Verifique se o MkDocs foi instalado com sucesso verificando a versão instalada:</p>
 <pre><code class="language-sh">mkdocs --version
 </code></pre>
-<h2 id="2-criando-um-projeto-de-documentacao">2 - Criando um Projeto de Documentação</h2>
+<h2 id="3-criando-um-projeto-de-documentacao">3 - Criando um Projeto de Documentação 📂</h2>
 <p>Para criar um projeto de documentação usando o MkDocs, navegue até o local onde deseja criar o projeto no terminal. Aqui, vamos criar um projeto na área de trabalho:</p>
 <pre><code class="language-sh">cd ~/Desktop
 mkdocs new nome_do_projeto
 </code></pre>
-<p>Substitua "nome_do_projeto" pelo nome desejado para seu projeto. </p>
+<p>Substitua "nome_do_projeto" pelo nome desejado para seu projeto.</p>
 <p>Agora, abra a nova pasta criada e liste todos os arquivos do MkDocs:</p>
 <pre><code class="language-sh">cd nome_do_projeto
 ls
 </code></pre>
-<h2 id="3-servindo-a-documentacao-localmente">3 - Servindo a Documentação Localmente</h2>
+<h2 id="4-configurando-o-projeto-com-mkdocsyml">4 - Configurando o Projeto com <code>mkdocs.yml</code> ⚙️</h2>
+<p>O arquivo <code>mkdocs.yml</code> ajuda o MkDocs a entender como construir o site de documentação. Aqui está um exemplo básico de configuração:</p>
+<pre><code class="language-yaml">site_name: Meu Projeto
+theme:
+  name: mkdocs
+plugins:
+  - search
+  - mkdocstrings
+nav:
+  - Home: index.md
+  - Sobre: about.md
+</code></pre>
+<h3 id="explicacao-dos-campos">Explicação dos Campos:</h3>
+<ul>
+<li><strong>site_name</strong>: Define o título do site.</li>
+<li><strong>theme</strong>: Define o tema do site (geralmente instalado com pip).</li>
+<li><strong>plugins</strong>: Lista os plugins utilizados (geralmente instalado com pip).</li>
+<li><strong>nav</strong>: Define a navegação do site.</li>
+</ul>
+<h3 id="instalando-e-ativando-um-tema">Instalando e Ativando um Tema 🎨</h3>
+<h4 id="instalando-o-tema">Instalando o Tema</h4>
+<p>Para instalar o tema "simple-blog", tema que eu utilizei, use o pip:</p>
+<pre><code class="language-sh">pip install mkdocs-simple-blog
+</code></pre>
+<h4 id="ativando-o-tema">Ativando o Tema</h4>
+<p>Após instalar o tema, edite o arquivo <code>mkdocs.yml</code> e defina o nome do tema para "simple-blog":</p>
+<pre><code class="language-yaml">theme:
+  name: simple-blog
+</code></pre>
+<p>Para mais informações sobre o tema, consulte a <a href="https://fernandocelmer.github.io/mkdocs-simple-blog/">documentação do tema</a>.</p>
+<h2 id="5-servindo-a-documentacao-localmente">5 - Servindo a Documentação Localmente 🌍</h2>
 <p>Para iniciar o servidor de desenvolvimento do MkDocs e visualizar sua documentação localmente, utilize o comando:</p>
 <pre><code class="language-sh">mkdocs serve
 </code></pre>
-<p>O terminal exibirá um link localhost. Copie e cole esse link em qualquer navegador web para visualizar a documentação.</p>
-<h2 id="4-construindo-a-documentacao">4 - Construindo a Documentação</h2>
+<p>O terminal exibirá um link localhost. Copie e cole esse link em qualquer navegador web para visualizar a documentação. Você deverá ver algo parecido com a imagem:</p>
+<p><img alt="Image title" src="https://www.mkdocs.org/img/screenshot.png" /></p>
+<h2 id="6-construindo-a-documentacao">6 - Construindo a Documentação 🏗️</h2>
 <p>Se você deseja construir a documentação para distribuição, utilize o comando:</p>
 <pre><code class="language-sh">mkdocs build
 </code></pre>
-<p>Este comando gerará uma versão estática da sua documentação, pronta para ser hospedada em qualquer servidor web.</p>
-<p>Parabéns! Você instalou com sucesso o MkDocs no seu sistema Ubuntu e criou um projeto básico de documentação. Lembre-se de que o MkDocs facilita a manutenção e organização da documentação do seu projeto.</p>
-<p>Se você achou este tutorial útil, não se esqueça de curtir, compartilhar e se inscrever para mais conteúdos. Obrigado por assistir e boa documentação!</p>
-<p><img alt="Imagem de Exemplo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/MkDocs.png/1024px-MkDocs.png" /></p>
-<hr />
+<p>Este comando gerará uma versão estática da sua documentação, pronta para ser hospedada em qualquer servidor web. A pasta <code>site</code> conterá todos os arquivos HTML e recursos necessários.</p>
+<h2 id="7-publicando-a-documentacao">7 - Publicando a Documentação 🚀</h2>
+<p>O MkDocs possui um mecanismo para publicar diretamente a documentação no GitHub Pages. Para isso, seu projeto precisa estar vinculado a um repositório no GitHub:</p>
+<ol>
+<li>Inicie um repositório Git no diretório do seu projeto, se ainda não estiver versionado:
+   <code>sh
+   git init</code></li>
+<li>Adicione seu repositório remoto:
+   <code>sh
+   git remote add origin &lt;URL_DO_SEU_REPOSITORIO&gt;</code></li>
+<li>Faça o deploy da sua documentação para o GitHub Pages:
+   <code>sh
+   mkdocs gh-deploy</code></li>
+</ol>
 <p>Espero que este guia seja útil! Se precisar de mais alguma coisa, estou à disposição.</p></p>
     </article>
 </section>
