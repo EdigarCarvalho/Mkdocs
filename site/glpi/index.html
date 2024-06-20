@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>GLPI - Adm Ti - Docs</title>
+                <title>GLPI - Administração de TI - Documentação</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="../assets/css/main.min.css">
+                <link href="../assets/_mkdocstrings.css" rel="stylesheet">
                 <script src="../search/main.js"></script>
 
             
@@ -36,7 +37,7 @@
         
 
         
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Adm Ti - Docs</span>
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Administração de TI - Documentação</span>
         
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
@@ -123,9 +124,9 @@
                 <h1 class=" title" id="component-title">GLPI</h1>
             
         </header>
-        <p><h1 id="guia-de-instalacao-do-glpi"><em>Guia de Instalação do GLPI</em></h1>
+        <p><h1 id="guia-de-instalacao-e-uso-do-glpi">GUIA DE INSTALAÇÃO E USO DO GLPI 📚</h1>
 <p>Escrito por: <strong>Edigar de Almeida Carvalho</strong></p>
-<h2 id="introducao-ao-glpi">Introdução ao GLPI</h2>
+<h2 id="relembrando">Relembrando</h2>
 <p>O GLPI é uma ferramenta de código aberto essencial para o gerenciamento de ativos de TI e suporte técnico. Antes de iniciar a instalação, é crucial garantir que todos os requisitos estejam atendidos. Recomenda-se utilizar um servidor Linux, preferencialmente o Ubuntu 22.04 LTS, juntamente com um servidor web como o Apache, PHP e um sistema de gerenciamento de banco de dados como o MariaDB. Embora este guia se concentre no Ubuntu, as instruções podem ser adaptadas para outras distribuições Linux. Abaixo uma imagem de um dashboard na ferramenta :</p>
 <p><img alt="Image title" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Glpi_screenshot_en.png" /></p>
 <h2 id="1-instalacao-dos-componentes">1 - Instalação dos Componentes</h2>
@@ -304,7 +305,25 @@ date.timezone = America/Sao_Paulo
 <ul>
 <li>Após concluir todos os passos, você verá a tela de login do GLPI. Parabéns, você finalizou a instalação do GLPI! Para começar a usar a ferramenta, basta fazer login. 🥳🥳🥳</li>
 </ul>
-<p><img alt="Image title" src="https://hedgedoc.teclib.com/uploads/upload_0e2f7386041260c85df9c4111e4ab347.png" /></p></p>
+<p><img alt="Image title" src="https://hedgedoc.teclib.com/uploads/upload_0e2f7386041260c85df9c4111e4ab347.png" /></p>
+<h2 id="6-tour-pela-ferramenta">6 - Tour pela Ferramenta ✈️</h2>
+<p>Agora vamos explorar um pouco mais sobre o uso do GLPI, uma ferramenta extremamente completa. Em minha experiência inicial, comecei cadastrando dispositivos de minha casa, trabalho e faculdade. Para isso, utilizei a seção de Assets no menu lateral esquerdo. Ao acessar essa seção, é possível categorizar os dispositivos, como "Computadores", "Monitores", "Dispositivos de Rede", "Impressoras" e "Telefones". Para adicionar um novo item, basta clicar em <strong>+ Add</strong>; para editar um item existente, clique sobre ele.</p>
+<h3 id="assets">Assets 🖥️</h3>
+<h4 id="visao-geral-dos-assets">Visão Geral dos Assets</h4>
+<p><img alt="Visão Geral dos Assets" src="https://i.postimg.cc/k5RBynPn/Screenshot-from-2024-06-17-20-48-21.png" /></p>
+<h4 id="computers-secao-de-computadoresnotebooks">Computers - Seção de Computadores/Notebooks</h4>
+<p><img alt="Computers - Seção de Computadores/Notebooks" src="https://i.postimg.cc/c41Cb7Gk/Screenshot-from-2024-06-17-20-49-04.png" /></p>
+<h4 id="phones-secao-de-celularestelefones">Phones - Seção de Celulares/Telefones</h4>
+<p><img alt="Phones - Seção de Celulares/Telefones" src="https://i.postimg.cc/7ZdLhpGj/Screenshot-from-2024-06-17-20-50-31.png" /></p>
+<h3 id="dashboard-dos-assets">Dashboard dos Assets 📊</h3>
+<p>Após cadastrar os itens, você pode acessar o Dashboard para ter uma visão panorâmica dos Assets:
+<img alt="Dashboard dos Assets" src="https://i.postimg.cc/9fsq3DYR/Screenshot-from-2024-06-17-20-46-20.png" /></p>
+<h2 id="assistance-assistencia">Assistance - Assistência 🛠️</h2>
+<p>Na seção "Assistance", utilizei o GLPI para cadastrar chamados/incidentes (Tickets), em meu uso foram tarefas relacionadas principalmente ao meio acadêmico, como projetos e trabalhos específicos. No contexto empresarial, esses tickets comumente seriam incidentes ou solicitações de suporte técnico.</p>
+<h3 id="dashboard-da-secao-de-assistencia">Dashboard da seção de Assistência</h3>
+<p><img alt="Dashboard da seção de Assistência" src="https://i.postimg.cc/2ykkgYML/Screenshot-from-2024-06-17-20-53-59.png" /></p>
+<h3 id="visao-geral-dos-tickets">Visão Geral dos Tickets</h3>
+<p><img alt="Visão Geral dos Tickets" src="https://i.postimg.cc/9QRW6J8b/Screenshot-from-2024-06-17-20-55-28.png" /></p></p>
     </article>
 </section>
 <!-- endblock -->
