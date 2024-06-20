@@ -6,7 +6,7 @@ Escrito por: **Edigar de Almeida Carvalho**
 
 O GLPI (Gestionnaire Libre de Parc Informatique) é uma poderosa ferramenta open-source para gerenciamento de ativos de TI e helpdesk 📊. Serve para catalogar e monitorar todos os equipamentos de TI, gerenciar tickets de suporte, controlar licenças de software, planejar tarefas e monitorar projetos, além de gerenciar orçamentos, contratos e usuários de forma eficiente 🖥️🛠️. Com o GLPI, você tem uma visão completa e organizada da infraestrutura de TI da sua organização, facilitando a administração e otimização dos recursos disponíveis 📈📅.
 
-# Características e possibilidades
+## Características e possibilidades
 
 ### CMDB (Gerenciamento de Configuração de Banco de Dados)
 - **Hardware:** Gerenciamento e inventário de computadores, monitores, dispositivos de rede, dispositivos passivos, etc.
@@ -51,7 +51,7 @@ O GLPI (Gestionnaire Libre de Parc Informatique) é uma poderosa ferramenta open
 
 O MKDocs é uma ferramenta simples e poderosa para criar documentação para seus projetos de código aberto 📚. Ele se destaca pela simplicidade de uso e pela geração de sites de documentação elegantes e fáceis de navegar. Em vez de se preocupar com HTML, CSS e JavaScript, você pode se concentrar no conteúdo da documentação em formato Markdown ✍️.
 
-# Características e possibilidades
+## Características e possibilidades
 
 ### Sintaxe Markdown
 - **Markdown:** Escreva sua documentação utilizando a sintaxe simples do Markdown, facilitando a escrita e tornando-a acessível para todos.
